@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'image_upload_rest',
+    'combine_multiple_model_rest',
 ]
 
 MIDDLEWARE = [

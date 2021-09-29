@@ -22,7 +22,9 @@ from Boilerplate import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('upload/', include('image_upload_rest.urls')),
+    path('combine-multiple-model/', include('combine_multiple_model_rest.urls')),
 ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
